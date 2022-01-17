@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC 
+		"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+		"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/views/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/views/header.jsp" />
+        <put-attribute name="menu" value="/views/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/views/footer.jsp" />
+    </definition>
+
+    <definition name="main" extends="base.definition">
+        <put-attribute name="title" value="Main page" />
+        <put-attribute name="body" value="/views/main.jsp" />
+    </definition>
+    
+    <definition name="contacts" extends="base.definition">
+        <put-attribute name="title" value="Contacts" />
+        <put-attribute name="body" value="/views/contacts.jsp" />
+    </definition>
+
+    <definition name="doctors" extends="base.definition">
+        <put-attribute name="title" value="Our doctors" />
+        <put-attribute name="body" value="/views/doctors.jsp" />
+    </definition>
+
+    <definition name="prices" extends="base.definition">
+        <put-attribute name="title" value="Our prices" />
+        <put-attribute name="body" value="/views/prices.jsp" />
+    </definition>
+
+    <definition name="myprofile" extends="base.definition">
+        <put-attribute name="title" value="Your profile" />
+        <put-attribute name="body" value="/views/myprofile.jsp" />
+    </definition>
+    <definition name="register" extends="base.definition">
+        <put-attribute name="title" value="Register" />
+        <put-attribute name="body" value="/views/register.jsp" />
+    </definition>
+    <definition name="login" extends="base.definition">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/views/login.jsp" />
+    </definition>
+    <definition name="removeDoctor" extends="base.definition">
+        <put-attribute name="title" value="Remove Doctor" />
+        <put-attribute name="body" value="/views/removeDoctor.jsp" />
+    </definition>
+    <definition name="addDoctor" extends="base.definition">
+        <put-attribute name="title" value="Add Doctor" />
+        <put-attribute name="body" value="/views/addDoctor.jsp" />
+    </definition>
+    <definition name="editAppUser" extends="base.definition">
+        <put-attribute name="title" value="Edut profile data" />
+        <put-attribute name="body" value="/views/editProfData.jsp" />
+    </definition>
+    <definition name="editPassword" extends="base.definition">
+        <put-attribute name="title" value="Edit password" />
+        <put-attribute name="body" value="/views/editPassword.jsp" />
+    </definition>
+    <definition name="createVisit" extends="base.definition">
+        <put-attribute name="title" value="Create Visit" />
+        <put-attribute name="body" value="/views/createVisit.jsp" />
+    </definition>
+    <definition name="selectTime" extends="base.definition">
+        <put-attribute name="title" value="Select time" />
+        <put-attribute name="body" value="/views/selectTime.jsp" />
+    </definition>
+    <definition name="payForVisit" extends="base.definition">
+        <put-attribute name="title" value="Pay" />
+        <put-attribute name="body" value="/views/payForVisit.jsp" />
+    </definition>
+    <definition name="visitList" extends="base.definition">
+        <put-attribute name="title" value="Visit list" />
+        <put-attribute name="body" value="/views/visitList.jsp" />
+    </definition>
+    <definition name="cancelVisit" extends="base.definition">
+        <put-attribute name="title" value="Visit list" />
+        <put-attribute name="body" value="/views/cancelVisit.jsp" />
+    </definition>
+    <definition name="accessDenied" extends="base.definition">
+        <put-attribute name="title" value="AccessDenied" />
+        <put-attribute name="body" value="/views/accessDenied.jsp" />
+    </definition>
+    <definition name="acceptPayment" extends="base.definition">
+        <put-attribute name="title" value="Accept payment" />
+        <put-attribute name="body" value="/views/acceptPayment.jsp" />
+    </definition>
+</tiles-definitions>
